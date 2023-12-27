@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Core\\ProjectCRUDTemplate.Core.csproj",
+      "projectUniqueName": "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\New folder\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Core\\ProjectCRUDTemplate.Core.csproj",
       "projectName": "ProjectCRUDTemplate.Core",
-      "projectPath": "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Core\\ProjectCRUDTemplate.Core.csproj",
+      "projectPath": "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\New folder\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Core\\ProjectCRUDTemplate.Core.csproj",
       "packagesPath": "C:\\Users\\imtiaz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Core\\obj\\",
+      "outputPath": "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\New folder\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\imtiaz\\AppData\\Roaming\\NuGet\\NuGet.Config",

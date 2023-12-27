@@ -1,6 +1,8 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using ProjectCRUDTemplate.API.Models.Project.Commands;
+using ProjectCRUDTemplate.API.Models.ProjectCommands;
+using ProjectCRUDTemplate.Application.ProjectCommands;
+using ProjectCRUDTemplate.Application.ProjectQueries;
 using ProjectCRUDTemplate.Core.Entity;
 using ProjectCRUDTemplate.Infrustructure.Data;
 
@@ -8,16 +10,15 @@ namespace ProjectCRUDTemplate.API.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-public class ProjectController(IBaseRepository<Project> baseRepository, IMediator mediator) : ControllerBase
+public class ProjectController(IMediator mediator) : ControllerBase
 {
-    private readonly IBaseRepository<Project> _baseRepository = baseRepository;
     private readonly IMediator _mediator = mediator;
 
     [HttpGet]
-    public async Task<IEnumerable<Project>> Get()
+    public async Task<IActionResult> Get()
     {
-
-        return await _baseRepository.GetAllAsync();
+        var response = await _mediator.Send(new GetAllProjectQuery());
+        return Ok(response);
     }
 
     [HttpGet("{id}")]
@@ -39,7 +40,9 @@ public class ProjectController(IBaseRepository<Project> baseRepository, IMediato
     }
 
     [HttpDelete("{id}")]
-    public void Delete(int id)
+    public async Task<IActionResult> Delete(DeleteProjectCommand command)
     {
+        var response = await _mediator.Send(command);
+        return Ok(response);
     }
 }

@@ -1,8 +1,7 @@
 ﻿using MediatR;
 using ProjectCRUDTemplate.Application.Common;
 
-namespace ProjectCRUDTemplate.API.Models.Project.Commands;
-
+namespace ProjectCRUDTemplate.API.Models.ProjectCommands;
 public class CreateProjectCommand : IRequest<CommonAPIResponse>
 {
     public required string ProjectTitle { get; set; }

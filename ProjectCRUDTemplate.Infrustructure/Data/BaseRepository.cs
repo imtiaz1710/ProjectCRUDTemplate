@@ -1,14 +1,15 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using ProjectCRUDTemplate.Core.Common;
 
 namespace ProjectCRUDTemplate.Infrustructure.Data;
 
-public class BaseRepository<T>(ProjectDbContext dbContext) : IBaseRepository<T> where T : class
+public class BaseRepository<T>(ProjectDbContext dbContext) : IBaseRepository<T> where T : BaseEntity
 {
     private readonly ProjectDbContext _dbContext = dbContext;
     public async Task<T> AddAsync(T entity, CancellationToken cancellationToken = default)
     {
         await _dbContext.Set<T>().AddAsync(entity);
-        _dbContext.SaveChanges();
+        await _dbContext.SaveChangesAsync();
         return entity;
     }
 
@@ -17,9 +18,11 @@ public class BaseRepository<T>(ProjectDbContext dbContext) : IBaseRepository<T> 
         throw new NotImplementedException();
     }
 
-    public Task DeleteAsync(T entity, CancellationToken cancellationToken = default)
+    public async Task DeleteAsync(T entity, CancellationToken cancellationToken = default)
     {
-        throw new NotImplementedException();
+        ArgumentNullException.ThrowIfNull(entity);
+        _dbContext.Remove<T>(entity);
+        await _dbContext.SaveChangesAsync();
     }
 
     public Task DeleteRangeAsync(IEnumerable<T> entities, CancellationToken cancellationToken = default)
@@ -27,9 +30,10 @@ public class BaseRepository<T>(ProjectDbContext dbContext) : IBaseRepository<T> 
         throw new NotImplementedException();
     }
 
-    public Task<T?> GetByIdAsync<TId>(TId id, CancellationToken cancellationToken = default) where TId : notnull
+    public async Task<T?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default)
     {
-        throw new NotImplementedException();
+        ArgumentNullException.ThrowIfNull(id);
+        return await _dbContext.Set<T>().FirstOrDefaultAsync(e => e.Id == id);
     }
 
     public async Task<List<T>> GetAllAsync(CancellationToken cancellationToken = default)

@@ -1,4 +1,4 @@
-﻿namespace ProjectCRUDTemplate.Core.Common;
+﻿namespace ProjectCRUDTemplate.Core.Entity;
 public abstract class BaseAuditableEntity : BaseEntity
 {
     public DateTimeOffset Created { get; set; }

@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using ProjectCRUDTemplate.Core.Common;
 using ProjectCRUDTemplate.Core.Entity;
 
 namespace ProjectCRUDTemplate.Infrustructure.Data;

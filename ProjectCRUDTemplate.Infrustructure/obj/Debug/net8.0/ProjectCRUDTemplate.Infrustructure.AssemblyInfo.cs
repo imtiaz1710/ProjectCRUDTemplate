@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProjectCRUDTemplate.Infrustructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a93e7057a0e686239d0e2e21f6d7ed0bad7a18f1")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProjectCRUDTemplate.Infrustructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProjectCRUDTemplate.Infrustructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

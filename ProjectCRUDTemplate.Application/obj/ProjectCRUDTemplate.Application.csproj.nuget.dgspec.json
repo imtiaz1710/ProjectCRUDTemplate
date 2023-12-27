@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Application\\ProjectCRUDTemplate.Application.csproj": {}
+    "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\New folder\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Application\\ProjectCRUDTemplate.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Application\\ProjectCRUDTemplate.Application.csproj": {
+    "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\New folder\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Application\\ProjectCRUDTemplate.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Application\\ProjectCRUDTemplate.Application.csproj",
+        "projectUniqueName": "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\New folder\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Application\\ProjectCRUDTemplate.Application.csproj",
         "projectName": "ProjectCRUDTemplate.Application",
-        "projectPath": "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Application\\ProjectCRUDTemplate.Application.csproj",
+        "projectPath": "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\New folder\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Application\\ProjectCRUDTemplate.Application.csproj",
         "packagesPath": "C:\\Users\\imtiaz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Application\\obj\\",
+        "outputPath": "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\New folder\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\imtiaz\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Infrustructure\\ProjectCRUDTemplate.Infrustructure.csproj": {
-                "projectPath": "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Infrustructure\\ProjectCRUDTemplate.Infrustructure.csproj"
+              "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\New folder\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Infrustructure\\ProjectCRUDTemplate.Infrustructure.csproj": {
+                "projectPath": "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\New folder\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Infrustructure\\ProjectCRUDTemplate.Infrustructure.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Core\\ProjectCRUDTemplate.Core.csproj": {
+    "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\New folder\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Core\\ProjectCRUDTemplate.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Core\\ProjectCRUDTemplate.Core.csproj",
+        "projectUniqueName": "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\New folder\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Core\\ProjectCRUDTemplate.Core.csproj",
         "projectName": "ProjectCRUDTemplate.Core",
-        "projectPath": "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Core\\ProjectCRUDTemplate.Core.csproj",
+        "projectPath": "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\New folder\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Core\\ProjectCRUDTemplate.Core.csproj",
         "packagesPath": "C:\\Users\\imtiaz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Core\\obj\\",
+        "outputPath": "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\New folder\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\imtiaz\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -124,14 +124,14 @@
         }
       }
     },
-    "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Infrustructure\\ProjectCRUDTemplate.Infrustructure.csproj": {
+    "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\New folder\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Infrustructure\\ProjectCRUDTemplate.Infrustructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Infrustructure\\ProjectCRUDTemplate.Infrustructure.csproj",
+        "projectUniqueName": "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\New folder\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Infrustructure\\ProjectCRUDTemplate.Infrustructure.csproj",
         "projectName": "ProjectCRUDTemplate.Infrustructure",
-        "projectPath": "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Infrustructure\\ProjectCRUDTemplate.Infrustructure.csproj",
+        "projectPath": "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\New folder\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Infrustructure\\ProjectCRUDTemplate.Infrustructure.csproj",
         "packagesPath": "C:\\Users\\imtiaz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Infrustructure\\obj\\",
+        "outputPath": "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\New folder\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Infrustructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\imtiaz\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -148,8 +148,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Core\\ProjectCRUDTemplate.Core.csproj": {
-                "projectPath": "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Core\\ProjectCRUDTemplate.Core.csproj"
+              "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\New folder\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Core\\ProjectCRUDTemplate.Core.csproj": {
+                "projectPath": "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\New folder\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Core\\ProjectCRUDTemplate.Core.csproj"
               }
             }
           }

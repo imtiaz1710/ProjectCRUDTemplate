@@ -1,5 +1,5 @@
 ﻿using MediatR;
-using ProjectCRUDTemplate.API.Models.Project.Commands;
+using ProjectCRUDTemplate.API.Models.ProjectCommands;
 using ProjectCRUDTemplate.Application.Common;
 using ProjectCRUDTemplate.Core.Entity;
 using ProjectCRUDTemplate.Infrustructure.Data;
