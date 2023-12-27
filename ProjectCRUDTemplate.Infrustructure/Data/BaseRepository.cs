@@ -46,9 +46,10 @@ public class BaseRepository<T>(ProjectDbContext dbContext) : IBaseRepository<T> 
         throw new NotImplementedException();
     }
 
-    public Task UpdateAsync(T entity, CancellationToken cancellationToken = default)
+    public async Task UpdateAsync(T entity, CancellationToken cancellationToken = default)
     {
-        throw new NotImplementedException();
+        _dbContext.Update<T>(entity);
+        await _dbContext.SaveChangesAsync(cancellationToken);
     }
 
     public Task UpdateRangeAsync(IEnumerable<T> entities, CancellationToken cancellationToken = default)

@@ -34,9 +34,11 @@ public class ProjectController(IMediator mediator) : ControllerBase
         return Ok(response);
     }
 
-    [HttpPut("{id}")]
-    public void Put(int id, [FromBody] string value)
+    [HttpPut]
+    public async Task<IActionResult> Put([FromBody] UpdateProjectCommand command)
     {
+        var response = await _mediator.Send(command);
+        return Ok(response);
     }
 
     [HttpDelete("{id}")]

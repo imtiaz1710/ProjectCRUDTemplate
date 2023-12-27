@@ -10,7 +10,7 @@ public class DeleteProjectCommandHandler(IProjectRepository projectRepository) :
     {
         ArgumentNullException.ThrowIfNull(request);
         var entity = await _projectRepository.GetByIdAsync(request.Id);
-        if(request == null) throw new Exception("Project not found");
+        if(entity == null) throw new Exception("Project not found");
 
         await _projectRepository.DeleteAsync(entity);
         return new CommonAPIResponse("Successfully deleted!", entity);
