@@ -1,0 +1,11 @@
+﻿global using Microsoft.EntityFrameworkCore;
+global using ProjectCRUDTemplate.Core.Entity;
+global using ProjectCRUDTemplate.Infrustructure.Data;
+global using System.Reflection;
+global using ProjectCRUDTemplate.Application;
+global using Serilog;
+global using MediatR;
+global using Microsoft.AspNetCore.Mvc;
+global using ProjectCRUDTemplate.API.Models.ProjectCommands;
+global using ProjectCRUDTemplate.Application.ProjectCommands;
+global using ProjectCRUDTemplate.Application.ProjectQueries;

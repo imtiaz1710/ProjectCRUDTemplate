@@ -1,18 +1,16 @@
-using Microsoft.EntityFrameworkCore;
-using ProjectCRUDTemplate.Core.Entity;
-using ProjectCRUDTemplate.Infrustructure.Data;
-using System.Reflection;
-using ProjectCRUDTemplate.Application;
-
 
 var builder = WebApplication.CreateBuilder(args);
+
+Log.Logger = new LoggerConfiguration()
+           .WriteTo.Console()
+           .CreateLogger();
+
 builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 
-// Add services to the container.
-
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
 builder.Services.AddEndpointsApiExplorer();
+
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddMediatR(cfg =>
@@ -21,16 +19,26 @@ builder.Services.AddMediatR(cfg =>
 });
 
 builder.Services.AddTransient<IBaseRepository<Project>, BaseRepository<Project>>();
+
 builder.Services.AddTransient<IProjectRepository, ProjectRepository>();
 
 var configuration = builder.Configuration;
-string connectionString = configuration.GetConnectionString("YourDbConnection");
+
+string connectionString = configuration.GetConnectionString("DbConnection");
 builder.Services.AddDbContext<ProjectDbContext>(options =>
     options.UseSqlServer(connectionString));
 
 builder.Services.LoadApplicationDependencies();
 
+builder.Host.UseSerilog((context, configuration) =>
+    configuration.ReadFrom.Configuration(context.Configuration));
+
+
+
 var app = builder.Build();
+
+//Add support to logging request with SERILOG
+app.UseSerilogRequestLogging();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -43,7 +51,5 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-
 app.MapControllers();
-
 app.Run();
