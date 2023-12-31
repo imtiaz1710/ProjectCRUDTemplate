@@ -1,7 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using ProjectCRUDTemplate.Core.Entity;
-
-namespace ProjectCRUDTemplate.Infrustructure.Data;
+﻿namespace ProjectCRUDTemplate.Infrustructure.Data;
 
 public class ProjectDbContext: DbContext
 {
@@ -9,11 +6,6 @@ public class ProjectDbContext: DbContext
     {
 
     }
-    //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    //{
-    //    //optionsBuilder.UseSqlServer("Server=DESKTOP-4H6AU0O\\SQLEXPRESS;Database=ProjectCRUDTemplateDB;User Id=izm;Password=123456;");
-    //    base.OnConfiguring(optionsBuilder);
-    //}
     public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
     {
 

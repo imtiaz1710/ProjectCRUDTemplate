@@ -1,14 +1,10 @@
-﻿using MediatR;
-using ProjectCRUDTemplate.API.Models.ProjectCommands;
-using ProjectCRUDTemplate.Application.Common;
-using ProjectCRUDTemplate.Core.Entity;
-using ProjectCRUDTemplate.Infrustructure.Data;
+﻿namespace ProjectCRUDTemplate.Application.ProjectCommands;
 
-namespace ProjectCRUDTemplate.Application.ProjectCommands;
-
-public class CreateProjectCommandHandler(IProjectRepository projectRepository) : IRequestHandler<CreateProjectCommand, CommonAPIResponse>
+public class CreateProjectCommandHandler(IProjectRepository projectRepository) : 
+    IRequestHandler<CreateProjectCommand, CommonAPIResponse>
 {
     private readonly IProjectRepository _projectRepository = projectRepository;
+
     public async Task<CommonAPIResponse> Handle(CreateProjectCommand request, CancellationToken cancellationToken)
     {
         var projectEntity = new Project
@@ -20,6 +16,6 @@ public class CreateProjectCommandHandler(IProjectRepository projectRepository) :
 
         var response = await _projectRepository.AddAsync(projectEntity);
 
-        return new CommonAPIResponse(data: response, message: "Successfully Created Project!");
+        return new CommonAPIResponse(data: response, message: ApplicationConstants.DataCreatedSuccessfull);
     }
 }

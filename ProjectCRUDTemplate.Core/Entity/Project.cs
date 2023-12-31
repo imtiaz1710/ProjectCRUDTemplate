@@ -1,6 +1,6 @@
 ﻿namespace ProjectCRUDTemplate.Core.Entity;
 
-public class Project: BaseAuditableEntity
+public class Project : BaseAuditableEntity
 {
     public required string ProjectTitle { get; set; }
     public required string Country { get; set; }

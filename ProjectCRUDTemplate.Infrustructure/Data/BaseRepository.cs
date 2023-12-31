@@ -1,7 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using ProjectCRUDTemplate.Core.Common;
-
-namespace ProjectCRUDTemplate.Infrustructure.Data;
+﻿namespace ProjectCRUDTemplate.Infrustructure.Data;
 
 public class BaseRepository<T>(ProjectDbContext dbContext) : IBaseRepository<T> where T : BaseEntity
 {
