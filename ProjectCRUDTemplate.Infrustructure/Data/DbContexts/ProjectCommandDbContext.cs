@@ -1,8 +1,8 @@
-﻿namespace ProjectCRUDTemplate.Infrustructure.Data;
+﻿namespace ProjectCRUDTemplate.Infrustructure.Data.DbContexts;
 
-public class ProjectDbContext: DbContext
+public class ProjectCommandDbContext : DbContext
 {
-    public ProjectDbContext(DbContextOptions<ProjectDbContext> options) : base(options)
+    public ProjectCommandDbContext(DbContextOptions<ProjectCommandDbContext> options) : base(options)
     {
 
     }
@@ -32,6 +32,6 @@ public class ProjectDbContext: DbContext
 
         return base.SaveChangesAsync();
     }
-    public DbSet<Project> Projects {  get; set; }
+    public DbSet<Project> Projects { get; set; }
     public DbSet<Employee> Employees { get; set; }
 }

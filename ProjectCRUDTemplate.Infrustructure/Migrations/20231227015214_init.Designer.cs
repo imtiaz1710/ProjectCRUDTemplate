@@ -5,13 +5,13 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using ProjectCRUDTemplate.Infrustructure.Data;
+using ProjectCRUDTemplate.Infrustructure.Data.DbContexts;
 
 #nullable disable
 
 namespace ProjectCRUDTemplate.Infrustructure.Migrations
 {
-    [DbContext(typeof(ProjectDbContext))]
+    [DbContext(typeof(ProjectCommandDbContext))]
     [Migration("20231227015214_init")]
     partial class init
     {

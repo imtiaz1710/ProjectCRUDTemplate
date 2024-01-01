@@ -1,9 +1,9 @@
 ﻿namespace ProjectCRUDTemplate.Application.ProjectCommands;
 
-public class CreateProjectCommandHandler(IProjectRepository projectRepository) : 
+public class CreateProjectCommandHandler(IProjectCommandRepository projectRepository) : 
     IRequestHandler<CreateProjectCommand, CommonAPIResponse>
 {
-    private readonly IProjectRepository _projectRepository = projectRepository;
+    private readonly IProjectCommandRepository _projectRepository = projectRepository;
 
     public async Task<CommonAPIResponse> Handle(CreateProjectCommand request, CancellationToken cancellationToken)
     {

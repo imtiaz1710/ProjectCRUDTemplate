@@ -1,14 +1,17 @@
-﻿namespace ProjectCRUDTemplate.Application.ProjectCommands;
+﻿using ProjectCRUDTemplate.Core.Interfaces;
 
-public class UpdateProjectCommandHandler(IProjectRepository projectRepository) : IRequestHandler<UpdateProjectCommand, CommonAPIResponse>
+namespace ProjectCRUDTemplate.Application.ProjectCommands;
+
+public class UpdateProjectCommandHandler(IProjectCommandRepository projectCommandRepository, IProjectQueryRepository projectQueryRepository) : IRequestHandler<UpdateProjectCommand, CommonAPIResponse>
 {
-    private readonly IProjectRepository _projectRepository = projectRepository;
+    private readonly IProjectCommandRepository _projectRepository = projectCommandRepository;
+    private readonly IProjectQueryRepository _projectQueryRepository = projectQueryRepository;
 
     public async Task<CommonAPIResponse> Handle(UpdateProjectCommand request, CancellationToken cancellationToken)
     {
         ArgumentNullException.ThrowIfNull(request);
 
-        var entity = await _projectRepository.GetByIdAsync(request.Id);
+        var entity = await _projectQueryRepository.GetByIdAsync(request.Id);
 
         if (entity == null) throw new Exception(ApplicationConstants.ItemNotFound);
 

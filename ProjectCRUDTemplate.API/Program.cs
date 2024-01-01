@@ -1,4 +1,8 @@
 
+using ProjectCRUDTemplate.Core.Interfaces;
+using ProjectCRUDTemplate.Infrustructure.Data.DbContexts;
+using ProjectCRUDTemplate.Infrustructure.Data.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 Log.Logger = new LoggerConfiguration()
@@ -18,15 +22,18 @@ builder.Services.AddMediatR(cfg =>
     cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
 });
 
-builder.Services.AddTransient<IBaseRepository<Project>, BaseRepository<Project>>();
+builder.Services.AddTransient<IProjectCommandRepository, ProjectCommandRepository>();
 
-builder.Services.AddTransient<IProjectRepository, ProjectRepository>();
+builder.Services.AddScoped<IProjectQueryRepository, ProjectQueryRepository>();
 
 var configuration = builder.Configuration;
 
 string connectionString = configuration.GetConnectionString("DbConnection");
-builder.Services.AddDbContext<ProjectDbContext>(options =>
+
+builder.Services.AddDbContext<ProjectCommandDbContext>(options =>
     options.UseSqlServer(connectionString));
+
+builder.Services.AddSingleton<ProjectQueryDbContext>();
 
 builder.Services.LoadApplicationDependencies();
 

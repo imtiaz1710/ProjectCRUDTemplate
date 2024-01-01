@@ -1,8 +1,10 @@
-﻿namespace ProjectCRUDTemplate.Infrustructure.Data;
+﻿using ProjectCRUDTemplate.Infrustructure.Data.DbContexts;
 
-public class BaseRepository<T>(ProjectDbContext dbContext) : IBaseRepository<T> where T : BaseEntity
+namespace ProjectCRUDTemplate.Infrustructure.Data.Repositories;
+
+public class CommandRepositoryBase<T>(ProjectCommandDbContext dbContext) : ICommandRepository<T> where T : BaseEntity
 {
-    private readonly ProjectDbContext _dbContext = dbContext;
+    private readonly ProjectCommandDbContext _dbContext = dbContext;
     public async Task<T> AddAsync(T entity, CancellationToken cancellationToken = default)
     {
         await _dbContext.Set<T>().AddAsync(entity);
@@ -18,7 +20,7 @@ public class BaseRepository<T>(ProjectDbContext dbContext) : IBaseRepository<T> 
     public async Task DeleteAsync(T entity, CancellationToken cancellationToken = default)
     {
         ArgumentNullException.ThrowIfNull(entity);
-        _dbContext.Remove<T>(entity);
+        _dbContext.Remove(entity);
         await _dbContext.SaveChangesAsync();
     }
 
@@ -27,16 +29,16 @@ public class BaseRepository<T>(ProjectDbContext dbContext) : IBaseRepository<T> 
         throw new NotImplementedException();
     }
 
-    public async Task<T?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default)
-    {
-        ArgumentNullException.ThrowIfNull(id);
-        return await _dbContext.Set<T>().FirstOrDefaultAsync(e => e.Id == id);
-    }
+    //public async Task<T?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default)
+    //{
+    //    ArgumentNullException.ThrowIfNull(id);
+    //    return await _dbContext.Set<T>().FirstOrDefaultAsync(e => e.Id == id);
+    //}
 
-    public async Task<List<T>> GetAllAsync(CancellationToken cancellationToken = default)
-    {
-        return await _dbContext.Set<T>().ToListAsync(cancellationToken);
-    }
+    //public async Task<List<T>> GetAllAsync(CancellationToken cancellationToken = default)
+    //{
+    //    return await _dbContext.Set<T>().ToListAsync(cancellationToken);
+    //}
 
     public Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
     {
@@ -45,7 +47,7 @@ public class BaseRepository<T>(ProjectDbContext dbContext) : IBaseRepository<T> 
 
     public async Task UpdateAsync(T entity, CancellationToken cancellationToken = default)
     {
-        _dbContext.Update<T>(entity);
+        _dbContext.Update(entity);
         await _dbContext.SaveChangesAsync(cancellationToken);
     }
 

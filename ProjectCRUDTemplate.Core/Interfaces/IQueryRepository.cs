@@ -1,6 +1,6 @@
 ﻿namespace ProjectCRUDTemplate.Core.Interfaces;
 
-public interface IQueryRepositoryBase<T> where T : class
+public interface IQueryRepository<T> where T : class
 {
     Task<T?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default);
     Task<List<T>> GetAllAsync(CancellationToken cancellationToken = default);
