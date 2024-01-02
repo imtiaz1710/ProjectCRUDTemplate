@@ -35,7 +35,7 @@ public class ProjectController(IMediator mediator, ILogger<ProjectController> lo
         return Ok(response);
     }
 
-    [HttpDelete("{id}")]
+    [HttpDelete]
     public async Task<IActionResult> Delete(DeleteProjectCommand command)
     {
         var response = await _mediator.Send(command);
