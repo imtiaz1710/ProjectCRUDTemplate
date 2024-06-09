@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sJuVKwLMJDFRH4MqmOKrM6P+93G5kAYGckWu+zwOiSEfztj9lqdJGRAA/n8tZO81GLAYTnYbPVnJhkVGTy5Iyg==",
+  "dgSpecHash": "aNji1Pl81Y/1VLgXSTcWr2WmFaEbhxP1MSjLBRA/2UhxX5v68CCS9Q9aSsXgTp1WcYfzOU2f2RlSzLUBNEtUeA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\imtiaz\\Desktop\\Redas\\MyProjForRedas\\New folder\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Infrustructure\\ProjectCRUDTemplate.Infrustructure.csproj",
+  "projectFilePath": "C:\\Users\\imtiaz\\Desktop\\ProjectCRUDTemplate\\ProjectCRUDTemplate.Infrustructure\\ProjectCRUDTemplate.Infrustructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\imtiaz\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\imtiaz\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

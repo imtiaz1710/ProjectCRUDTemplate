@@ -33,3 +33,21 @@ C:\Users\imtiaz\Desktop\Redas\MyProjForRedas\New folder\ProjectCRUDTemplate\Proj
 C:\Users\imtiaz\Desktop\Redas\MyProjForRedas\New folder\ProjectCRUDTemplate\ProjectCRUDTemplate.Application\obj\Debug\net8.0\refint\ProjectCRUDTemplate.Application.dll
 C:\Users\imtiaz\Desktop\Redas\MyProjForRedas\New folder\ProjectCRUDTemplate\ProjectCRUDTemplate.Application\obj\Debug\net8.0\ProjectCRUDTemplate.Application.pdb
 C:\Users\imtiaz\Desktop\Redas\MyProjForRedas\New folder\ProjectCRUDTemplate\ProjectCRUDTemplate.Application\obj\Debug\net8.0\ref\ProjectCRUDTemplate.Application.dll
+C:\Users\imtiaz\Desktop\ProjectCRUDTemplate\ProjectCRUDTemplate.Application\bin\Debug\net8.0\ProjectCRUDTemplate.Application.deps.json
+C:\Users\imtiaz\Desktop\ProjectCRUDTemplate\ProjectCRUDTemplate.Application\bin\Debug\net8.0\ProjectCRUDTemplate.Application.dll
+C:\Users\imtiaz\Desktop\ProjectCRUDTemplate\ProjectCRUDTemplate.Application\bin\Debug\net8.0\ProjectCRUDTemplate.Application.pdb
+C:\Users\imtiaz\Desktop\ProjectCRUDTemplate\ProjectCRUDTemplate.Application\bin\Debug\net8.0\ProjectCRUDTemplate.Core.dll
+C:\Users\imtiaz\Desktop\ProjectCRUDTemplate\ProjectCRUDTemplate.Application\bin\Debug\net8.0\ProjectCRUDTemplate.Infrustructure.dll
+C:\Users\imtiaz\Desktop\ProjectCRUDTemplate\ProjectCRUDTemplate.Application\bin\Debug\net8.0\ProjectCRUDTemplate.Infrustructure.pdb
+C:\Users\imtiaz\Desktop\ProjectCRUDTemplate\ProjectCRUDTemplate.Application\bin\Debug\net8.0\ProjectCRUDTemplate.Core.pdb
+C:\Users\imtiaz\Desktop\ProjectCRUDTemplate\ProjectCRUDTemplate.Application\obj\Debug\net8.0\ProjectCRUDTemplate.Application.csproj.AssemblyReference.cache
+C:\Users\imtiaz\Desktop\ProjectCRUDTemplate\ProjectCRUDTemplate.Application\obj\Debug\net8.0\ProjectCRUDTemplate.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\imtiaz\Desktop\ProjectCRUDTemplate\ProjectCRUDTemplate.Application\obj\Debug\net8.0\ProjectCRUDTemplate.Application.AssemblyInfoInputs.cache
+C:\Users\imtiaz\Desktop\ProjectCRUDTemplate\ProjectCRUDTemplate.Application\obj\Debug\net8.0\ProjectCRUDTemplate.Application.AssemblyInfo.cs
+C:\Users\imtiaz\Desktop\ProjectCRUDTemplate\ProjectCRUDTemplate.Application\obj\Debug\net8.0\ProjectCRUDTemplate.Application.csproj.CoreCompileInputs.cache
+C:\Users\imtiaz\Desktop\ProjectCRUDTemplate\ProjectCRUDTemplate.Application\obj\Debug\net8.0\ProjectCRUDTemplate.Application.sourcelink.json
+C:\Users\imtiaz\Desktop\ProjectCRUDTemplate\ProjectCRUDTemplate.Application\obj\Debug\net8.0\ProjectCRUDTemplate.Application.csproj.CopyComplete
+C:\Users\imtiaz\Desktop\ProjectCRUDTemplate\ProjectCRUDTemplate.Application\obj\Debug\net8.0\ProjectCRUDTemplate.Application.dll
+C:\Users\imtiaz\Desktop\ProjectCRUDTemplate\ProjectCRUDTemplate.Application\obj\Debug\net8.0\refint\ProjectCRUDTemplate.Application.dll
+C:\Users\imtiaz\Desktop\ProjectCRUDTemplate\ProjectCRUDTemplate.Application\obj\Debug\net8.0\ProjectCRUDTemplate.Application.pdb
+C:\Users\imtiaz\Desktop\ProjectCRUDTemplate\ProjectCRUDTemplate.Application\obj\Debug\net8.0\ref\ProjectCRUDTemplate.Application.dll

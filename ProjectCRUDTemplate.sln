@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectCRUDTemplate.API", "ProjectCRUDTemplate.API.csproj", "{89EBE5D6-DDB1-40C5-90CF-C5C0D1F34333}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectCRUDTemplate.API", "ProjectCRUDTemplate.API/ProjectCRUDTemplate.API.csproj", "{89EBE5D6-DDB1-40C5-90CF-C5C0D1F34333}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectCRUDTemplate.Infrustructure", "..\ProjectCRUDTemplate.Infrustructure\ProjectCRUDTemplate.Infrustructure.csproj", "{2C7EBA36-097D-4192-B552-2C6075DE14BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectCRUDTemplate.Infrustructure", "ProjectCRUDTemplate.Infrustructure\ProjectCRUDTemplate.Infrustructure.csproj", "{2C7EBA36-097D-4192-B552-2C6075DE14BE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectCRUDTemplate.Core", "..\ProjectCRUDTemplate.Core\ProjectCRUDTemplate.Core.csproj", "{796C8418-4FAB-417C-B764-787BFB830B7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectCRUDTemplate.Core", "ProjectCRUDTemplate.Core\ProjectCRUDTemplate.Core.csproj", "{796C8418-4FAB-417C-B764-787BFB830B7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectCRUDTemplate.Application", "..\ProjectCRUDTemplate.Application\ProjectCRUDTemplate.Application.csproj", "{95C0F627-D1E9-47E7-8D9E-74F9D64EDEF6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectCRUDTemplate.Application", "ProjectCRUDTemplate.Application\ProjectCRUDTemplate.Application.csproj", "{95C0F627-D1E9-47E7-8D9E-74F9D64EDEF6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
