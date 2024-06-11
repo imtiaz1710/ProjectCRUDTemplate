@@ -1,25 +1,21 @@
+# Use the official .NET SDK image for building the app
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build-env
-WORKDIR /App
+WORKDIR /app
 
-# Copy everything
-Copy *.sln .
-COPY ProjectCRUDTemplate.API/*.csproj ./ProjectCRUDTemplate.API/
-COPY ProjectCRUDTemplate.Infrustructure/*.csproj ./ProjectCRUDTemplate.Infrustructure/
-COPY ProjectCRUDTemplate.Core/*.csproj ./ProjectCRUDTemplate.Core/
-COPY ProjectCRUDTemplate.Application/*.csproj ./ProjectCRUDTemplate.Application/
-
-# Restore as distinct layers
+# Copy everything and restore dependencies
+COPY . ./
 RUN dotnet restore
-COPY ProjectCRUDTemplate.API/. ./ProjectCRUDTemplate.API/
-COPY ProjectCRUDTemplate.Infrustructure/. ./ProjectCRUDTemplate.Infrustructure/
-COPY ProjectCRUDTemplate.Core/. ./ProjectCRUDTemplate.Core/
-COPY ProjectCRUDTemplate.Application/. ./ProjectCRUDTemplate.Application/
-WORKDIR /App/ProjectCRUDTemplate.API
-# Build and publish a release
+
+# Build and publish the app
 RUN dotnet publish -c Release -o out
 
-# Build runtime image
+# Use the official .NET runtime image for running the app
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
-WORKDIR /App
-COPY --from=build-env /App/ProjectCRUDTemplate.API/out .
+WORKDIR /app
+COPY --from=build-env /app/out .
+
+# Expose the port the app runs on
+EXPOSE 80
+
+# Start the app
 ENTRYPOINT ["dotnet", "ProjectCRUDTemplate.API.dll"]
